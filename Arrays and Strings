@@ -10,4 +10,29 @@ Arrays.Sort(StringArray);
     return false;
     
     
+ 3. URLify: Write a method to replace all spaces in a string with '%20: You may assume that the string
+has sufficient space at the end to hold the additional characters, and that you are given the "true"
+length of the string. (Note: If implementing in Java, please use a character array so that you can
+perform this operation in place.)
+
+    
+
+    text = "Mr John Smith";
+
+    string special = "%20";
+
+    List<string> list = new List<string>();
+
+    for(int i = 0; i < text.Length; i++)
+  {
+    if (text[i] != ' ')
+    {
+        list.Add(text[i].ToString());
+    }
+    else list.Add(spec);
+  }
+
+   string result = string.Join("", list);
+    
+    
          
